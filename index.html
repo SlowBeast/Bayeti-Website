@@ -1,0 +1,789 @@
+<?php  
+	error_reporting(0);
+	if (isset($_POST['submit'])) {
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$phone = $_POST['phone'];
+		$sub = $_POST['sub'];
+		$msg = $_POST['message'];
+
+		$to = 'ahmad.younes.2005@gmail.com';
+		$subject = "Form Submission: ".$sub;
+		$subject2 = "Copy of your form submission: ".$sub;
+		$message = "Name: ".$name."\n\n"."Phone: ".$phone."\n\n"."Wrote the following message: \n\n".$msg;
+		$message2 = "Here is a copy of your message: \n\n"."Name: ".$name."\n\n"."Phone: ".$phone."\n\n"."Message: \n\n".$msg;
+		$headers = "From: ".$email;
+		$headers2 = "From: ".$to;
+
+		mail($to, $subject, $message, $headers);
+		mail($email, $subject2, $message2, $headers2);
+		echo "<h2>Mail Sent! Thank you ".$name.". We will contact you shortly. </h2>";
+	}
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta name="designer" content="" />
+	<title>Bayeti -- Authentic Mediterranean Cuisine</title><link rel="icon" type="image/png" href="16x16.png" sizes="16x16" />  
+	<!-- USING BOOTSTRAP v3-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="bootstrap-v3/css/bootstrap-theme.min.js" />
+
+	 
+	<!--<link rel="icon" type="image/png" href="32x32.png" sizes="32x32" />  
+	<link rel="icon" type="image/png" href="96x96.png" sizes="96x96" /> --> 
+	<link rel="stylesheet" href="css/animate.min.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<!-- LINKING CSS FILE -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body data-spy="scroll" data-target="#navbar1">
+
+
+
+
+	<section class="intro" id="home">
+		<!-- SNOWNING EFFECT -->
+
+    <div class="snow1"></div>
+    <div class="snow2"></div>
+    <div class="snow3"></div>
+
+
+<!-- SNOWNING EFFECT -->
+		<div class="inner">
+			<div class="content">
+				<img src="images 3/logo2.png" class="img-responsive">
+				<div id="slogan">Food That Will Melt Your <span style="color: red; display: inline-block; font-size: 2em" class="animated flash infinite">&hearts;</span></div>
+				<a href="#about" class="clickme" style="position: relative;">Tell Me More</a>
+			</div>
+		</div>
+
+	</section>
+
+<!-- ================== NAVBAR ================ -->
+<nav id="navbar1" class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="color: white; font-size: 2em">Bayeti</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="border: none;">      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- ================== NAVBAR ================ -->
+
+<!-- ================== ABOUT =================== -->
+<section id="about">
+	<!-- SNOWNING EFFECT -->
+
+    <div class="snow1"></div>
+    <div class="snow2"></div>
+    <div class="snow3"></div>
+
+
+<!-- SNOWNING EFFECT -->
+
+	<div class="container">
+		<h1 class="text-center">About</h1>
+		<hr style="width: 200px; border: 5px solid orange; margin: 0 auto" />
+		<div class="row" id="about-sect">
+			
+			<div class="col-lg-6">
+				<img src="images 3/ourplace.jpg" class="img-responsive" alt="Our Place" />
+			</div>
+			<div class="col-lg-6 piece">
+				<h2>Our Place</h2>
+				<hr style="width: 120px; border: 2px solid orange; margin-left: 0" />
+				<p>Your friendly neighborhood place is humble and modest. Not far if you live in the surrounding areas of Natchez or in Natchez.  A local entrepreneur trying to get our restaurant business off the ground. We have not opened a store front yet for our restaurant, but we are still working on it! To raise money for that, we are currently cooking and catering out of our home. To see where we are located, go to contact us page.</p>
+				<br />
+				
+				<h2 >Only The Freshest Food</h2>
+				<hr style="width: 280px; border: 2px solid orange; margin-left: 0" />
+				<p>Authentic Mediterranean food. Amazing quality, very professional, and absolutely delicious. That's how we come up with our slogan <span style="color: orange;">"Food That Will Melt Your <span style="color: red;">&hearts;</span>"</span></p>
+			</div>	
+		</div>
+	</div>
+</section>
+<!-- ================== ABOUT =================== -->
+
+
+<!-- ================== MENU ==================== -->
+<section id="menu">
+	<!-- SNOWNING EFFECT -->
+
+    <div class="snow1"></div>
+    <div class="snow2"></div>
+    <div class="snow3"></div>
+
+
+<!-- SNOWNING EFFECT -->
+
+	<div class="container" >
+		<h1 class="text-center">Menu</h1>
+<hr style="width: 200px; border: 5px solid orange; margin: 0 auto" />
+		
+		<div class="row" id="menu-sect">
+			
+			<table>
+			  <thead style="border-bottom: 1px solid white;">
+			    <tr style="background-color: orange">
+			      <th scope="col">Appetizers</th>
+			      <th scope="col" style="text-align: right;">Price</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td scope="row">Hummus Dip</td>
+			      <td class="price">$5.00</td>
+			    </tr>
+			    <tr>
+			      <td scope="row">Babaganouj</td>
+			      <td class="price">$5.00</td>
+			    </tr>
+			    <tr>
+			      <td scope="row">2 Egg Rolls</td>
+			      <td class="price">$4.00</td>
+			    </tr>
+			    <tr>
+			      <td scope="row">5 Yalange </td>
+			      <td class="price">$4.00</td>
+			    </tr>
+			  </tbody>
+			</table>
+
+			<table>
+			  <thead style="border-bottom: 1px solid white;">
+			    <tr style="background-color: purple">
+
+			      <th scope="col">Salads</th>
+			      <th scope="col"></th>
+			    </tr>
+			  </thead>
+
+			  <tbody>
+			    <tr>
+			      <td scope="row">Tabouleh Salad</td>
+			      <td class="price">$10.00</td>
+			    </tr>
+			    <tr>
+			      <td scope="row">Feta Cheese Salad</td>
+			      <td class="price">$10.00</td>
+			    </tr>
+			    <tr>
+			      <td scope="row">Cucumber With Yogurt Salad</td>
+			      <td class="price">$8.00</td>
+			    </tr>
+			    
+			  </tbody>
+			</table>
+
+
+			<table>
+
+			  <thead style="border-bottom: 1px solid white; ">
+
+			    <tr style="background-color: blue;">
+			      <th scope="col">Entrees <div id="caption"><p>All plates come with a choice of Hummus dip or babaganouj and grilled vegetables. Served with your choice of rice or flat bread</p></div></th>
+			      <th scope="col"></th>
+			    </tr>
+
+			  </thead>
+
+			  <tbody>
+			    <tr>
+			      <td scope="row">Chicken Kabab</td>
+			      <td class="price">$12.00</td>
+			    </tr>
+			    <tr>
+			      <td scope="row">Beef Kabab</td>
+			      <td class="price">$12.00</td>
+			    </tr>
+			    <tr>
+			      <td scope="row">Kafta Kabab</td>
+			      <td class="price">$12.00</td>
+			    </tr>
+			    <tr>
+			      <td scope="row">Shawerma Chicken with a slice of tomato &amp; onion</td>
+			      <td class="price">$12.00</td>
+			    </tr>
+			    <tr>
+			      <td scope="row">Shawerma Beef with a slice of tomato &amp; onion</td>
+			      <td class="price">$12.00</td>
+			    </tr>
+			  </tbody>
+			</table>
+
+			<table>
+			  <thead style="border-bottom: 1px solid white; ">
+			    <tr style="background-color: maroon;">
+			      <th scope="col">Side Orders</th>
+			      <th scope="col"></th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td scope="row">Extra skewers any kabab</td>
+			      <td class="price">$3.00</td>
+			    </tr>
+			    <tr>
+			      <td scope="row">All salads</td>
+			      <td class="price">$5.00</td>
+			    </tr>
+			  
+			  </tbody>
+			</table>
+		</div>
+	</div>
+</section>
+<!-- ================== MENU ==================== -->
+
+<!-- ================= GALLERY ================= -->
+<section id="specials">
+	<!-- SNOWNING EFFECT -->
+
+    <div class="snow1"></div>
+    <div class="snow2"></div>
+    <div class="snow3"></div>
+
+
+<!-- SNOWNING EFFECT -->
+
+	<div class="container">
+		<h1 class="text-center">Specials</h1>
+		<hr style="width: 200px; border: 5px solid orange; margin: 0 auto" />
+		<div style="color: white; font-size: 2em; text-align: center; margin-top: 30px; text-shadow: 5px 5px 5px black; color: orange">Ask us about the weekely spcials. It might sugject to change every week. Also ask us about the prices</div>
+		<div class="row">
+			
+			<div class="col-lg-4 col-sm-4">
+				<div class="card">
+					<img class="card-img-top img-responsive" src="images/falafel.png" alt="Card image cap">
+					<div class="card-block text-center">
+						<h2 class="card-title">Falafel</h2>
+						
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal">
+							Click here for details
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">Falafel</h4>
+									</div>
+									<div class="modal-body">
+										<video width="100%" controls="controls" style="border: 3px solid black; border-radius: 10px; box-shadow: 2px 2px 2px 2px black; margin-bottom: 15px;" muted="muted">
+											<source src="videos/falafelmaking.mp4" type="video/mp4">
+											<source src="videos/falafelmaking.ogg" type="video/ogg">
+											Your browser does not support the video tag.
+										</video>
+										<p>Falafel or felafel is a deep-fried ball, doughnut or patty made from ground chickpeas, fava beans, or both with parsely and spices.</p> 
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-4">
+				<div class="card">
+					<img class="card-img-top img-responsive" src="images/sfiha.png" alt="Card image cap">
+					<div class="card-block text-center">
+						<h2 class="card-title">Sfiha</h2>
+						
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal1">
+							Click here for details
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">Sfiha</h4>
+									</div>
+									<div class="modal-body">
+										<video width="100%" controls="controls" style="border: 3px solid black; border-radius: 10px; box-shadow: 2px 2px 2px 2px black; margin-bottom: 15px;" muted="muted">
+											<source src="videos/sfiha.mp4" type="video/mp4">
+											<source src="videos/sfiha.ogg" type="video/ogg">
+											Your browser does not support the video tag.
+										</video>
+										<p>Meat pies served with tabouleh salad. <br /> <span style="color: orange">$12.00</span></p> 
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-lg-4 col-sm-4">
+				<div class="card">
+					<img class="card-img-top img-responsive" src="images/skillet.jpg" alt="Card image cap">
+					<div class="card-block text-center">
+						<h2 class="card-title">Chicken, Rice &amp; Vegetables</h2>
+						
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal2">
+							Click here for details
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">Chicken, Rice &amp; Vegetables</h4>
+									</div>
+									<div class="modal-body">
+										<video width="100%" controls="controls" style="border: 3px solid black; border-radius: 10px; box-shadow: 2px 2px 2px 2px black; margin-bottom: 15px;" muted="muted">
+											<source src="videos/ricechickenvegetables.mp4" type="video/mp4">
+											<source src="videos/ricechickenvegetables.ogg" type="video/ogg">
+											Your browser does not support the video tag.
+										</video>
+										<p>Rice with vegetables &amp; almonds on top with baked chicken served with a cucumber yogurt salad.</p> 
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="col-lg-4 col-sm-4">
+				<div class="card">
+					<img class="card-img-top img-responsive" src="images/salmonandspinach.jpg" alt="Card image cap">
+					<div class="card-block text-center">
+						<h3 class="card-title">Baked Salmon with Spinach</h3>
+						
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal3">
+							Click here for details
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">Baked Salmon with Spinach</h4>
+									</div>
+									<div class="modal-body">
+										<video width="100%" controls="controls" style="border: 3px solid black; border-radius: 10px; box-shadow: 2px 2px 2px 2px black; margin-bottom: 15px;" muted="muted">
+											<source src="videos/salmon.mp4" type="video/mp4">
+											<source src="videos/salmon.ogg" type="video/ogg">
+											Your browser does not support the video tag.
+										</video>
+										<p style="text-align: left;">- Salmon and spinach absolutely healthy served with a delicious spinach feta salad: <span style="color: orange">$10.00</span>. <br /> 
+										- Salmon plate: <span style="color: orange">$15.00</span>. <br/>
+										- Also adding grilled chicken salad: <span style="color: orange">$12.00</span>.</p> 
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-4">
+				<div class="card">
+					<img class="card-img-top img-responsive" src="images/musakhan.jpg" alt="Card image cap">
+					<div class="card-block text-center">
+						<h2 class="card-title">Musakhan</h2>
+						
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal4">
+							Click here for details
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">Musakhan</h4>
+									</div>
+									<div class="modal-body">
+										<video width="100%" controls="controls" style="border: 3px solid black; border-radius: 10px; box-shadow: 2px 2px 2px 2px black; margin-bottom: 15px;" muted="muted">
+											<source src="videos/musakhan.mp4" type="video/mp4">
+											<source src="videos/musakhan.ogg" type="video/ogg">
+											Your browser does not support the video tag.
+										</video>
+										<p style="text-align: left;">Baked chicken, sautéed onions spiced with a special lemony spice - all that - over a flat bread served with a choice of salad or lentils soup.</p> 
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-4">
+				<div class="card">
+					<img class="card-img-top img-responsive" src="images/fatetmagdous.jpg" alt="Card image cap">
+					<div class="card-block text-center">
+						<h2 class="card-title">Fattet Makdous</h2>
+						
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal5">
+							Click here for details
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">Fattet Makdous</h4>
+									</div>
+									<div class="modal-body">
+										<video width="100%" controls="controls" style="border: 3px solid black; border-radius: 10px; box-shadow: 2px 2px 2px 2px black; margin-bottom: 15px;" muted="muted">
+											<source src="videos/fateh.mp4" type="video/mp4">
+											<source src="videos/fateh.ogg" type="video/ogg">
+											Your browser does not support the video tag.
+										</video>
+										<p style="text-align: left;">Eggplant with meat and fried pita bread with a special sauce.</p> 
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		
+
+			<div class="col-lg-4 col-sm-4">
+				<div class="card">
+					<img class="card-img-top img-responsive" src="images/gyro.jpg" alt="Card image cap">
+					<div class="card-block text-center">
+						<h2 class="card-title">Gyro</h2>
+						
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal6">
+							Click here for details
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">Gyro</h4>
+									</div>
+									<div class="modal-body">
+										<video width="100%" controls="controls" style="border: 3px solid black; border-radius: 10px; box-shadow: 2px 2px 2px 2px black; margin-bottom: 15px;" muted="muted">
+											<source src="videos/gyro.mp4" type="video/mp4">
+											<source src="videos/gyro.ogg" type="video/ogg">
+											Your browser does not support the video tag.
+										</video>
+										<p style="text-align: left;">- Gyro plate with feta cheese salad or 4 cheese panini sandwich with tomato and avocado for <span style="color: orange">$12.00</span>. <br /> 
+										- Gyro sandwich: <span style="color: orange">$9.00</span>.</p> 
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-4">
+				<div class="card">
+					<img class="card-img-top img-responsive" src="images/lambchopsandvegetables.jpg" alt="Card image cap">
+					<div class="card-block text-center">
+						<h2 class="card-title">Lamb Chops &amp; Vegetables</h2>
+						
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal7">
+							Click here for details
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">Lamb Chops &amp; Vegetables</h4>
+									</div>
+									<div class="modal-body">
+										<video width="100%" controls="controls" style="border: 3px solid black; border-radius: 10px; box-shadow: 2px 2px 2px 2px black; margin-bottom: 15px;" muted="muted">
+											<source src="videos/lambchops.mp4" type="video/mp4">
+											<source src="videos/lambchops.ogg" type="video/ogg">
+											Your browser does not support the video tag.
+										</video>
+										<p style="text-align: left;"></p> 
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-4">
+				<div class="card">
+					<img class="card-img-top img-responsive" src="images/party.jpg" alt="Card image cap">
+					<div class="card-block text-center">
+						<h2 class="card-title">Get Together / Party Meals</h2>
+						
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal8">
+							Click here for details
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">Get Together / Party Meals</h4>
+									</div>
+									<div class="modal-body">
+										
+										<p style="text-align: left;">When you have a get together party &amp; you want to feed your guests something delicious, we can make it happen.</p> 
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</section>
+
+
+
+<!-- ================= GALLERY ================= -->
+
+
+<!-- ================== CONTACT US ============= -->
+<section id="contact">
+<!-- SNOWNING EFFECT -->
+    <div class="snow1"></div>
+    <div class="snow2"></div>
+    <div class="snow3"></div>
+<!-- SNOWNING EFFECT -->
+
+
+
+	<div class="container-fluid" >
+		<h1 class="text-center">Contact Us</h1>
+		<hr style="width: 200px; border: 5px solid orange; margin: 0 auto" />
+		<div style="color: white; font-size: 2em; text-align: center; margin-top: 30px; text-shadow: 5px 5px 5px black; color: orange">We also deliver the food you ordered to your place</div>
+			<div class="row" style="margin-left: 10px; margin-top: 100px; margin-bottom: 100px;">
+	   				<div class="col-md-4" style="color: orange">
+	   		 			<form action="" method="">
+	   		 				<label for="fname">Full Name:</label>
+						    <input type="text" id="fname" name="fullname" placeholder="Your full name.." />
+
+						    <label for="email">E-mail:</label>
+						    <input type="email" id="email" name="email" placeholder="Your E-mail.." />
+
+						    <label for="phone">Phone Number:</label>
+						    <input type="tel" id="phone" name="phone" placeholder="Your phone number ..." />
+
+						    <label for="subject">Message:</label>
+    						<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    						<input type="submit" value="Submit" />
+	   		 			</form>
+	   		 		</div>
+	   		 		
+
+	   		 		<div class="col-md-7" style="color: orange">
+	   		 			<table style="border-bottom: none; font-size: 110%; text-align: center;">
+	   		 				<tbody>
+	   		 					<tr style="margin-left: 15%;">
+	   		 						<td scope="col"><span class="favicon"><i class="glyphicon glyphicon-home"></i></span>125 Woodhaven Drive, Natchez, MS 39120, Mississippi </td>
+	   		 						<td scope="col"><span class="favicon"><i class="glyphicon glyphicon-time"></i></span>&nbsp;MON - FRI: 9:00am - 7:00pm</td>
+	   		 						<td scope="col"><span class="favicon"><i class="glyphicon glyphicon-earphone"></i></span>&nbsp;(601) 392-1096</td>
+	   		 					</tr>
+	   		 				</tbody>
+	   		 			</table>
+
+	   		 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.269561624725!2d-91.3797096845!3d31.51675555447323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8625f0baecd6081b%3A0xe5c6bc2f6c19514e!2s125+Woodhaven+Dr%2C+Natchez%2C+MS+39120%2C+USA!5e0!3m2!1sen!2suk!4v1514765918295" frameborder="0" allowfullscreen></iframe>
+					</div>
+			</div>
+	</div>
+</section>
+<!-- ================== CONTACT US ============= -->
+
+
+
+
+
+<!-- ======================= FOOTER ===================== -->
+<section id="footer">
+
+	<footer class="container">
+		<article class="row">
+			<p>
+				&copy; 2017 <span>Bayeti.ga</span> All Rights Reserved <br />
+				Designed &amp; Developed by: <span>Ahmad Al-Ahmad</span>
+			</p>
+		</article>
+	</footer>
+</section>
+
+
+
+<!-- ======================= FOOTER ===================== -->
+
+
+<a href="#" class="scrollToTop fa fa-arrow-up"></a>
+
+<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script src="js/isotope.min.js" type="text/javascript"></script>
+<script src="js/jquery.fancybox.pack.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+
+<!-- USING BOOTSTRAP v3-->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	// When the user scrolls down 20px from the top of the document, slide down the navbar
+// When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    document.getElementById("navbar1").style.top = "0";
+  } else {
+    document.getElementById("navbar1").style.top = "-100px";
+  }
+}
+</script>
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+  $('.nav li a').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+       return false;
+      }
+    }
+  });
+});
+
+	$(document).ready(function(){
+  $('.clickme').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+       return false;
+      }
+    }
+  });
+});
+</script>
+
+
+<!-- SCROLL TO TOP BUTTON -->
+<script type="text/javascript">
+	$(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+});
+</script>
+</body>
+</html>

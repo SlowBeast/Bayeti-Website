@@ -1,0 +1,611 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	font-family: 'Kaushan Script', cursive;
+
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;	
+	position: relative;
+}
+
+/* HOME PAGE START */
+.intro {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background: url('../images 3/wallpaper2.jpg') no-repeat center center fixed;
+	display: table;
+	background-size: cover;
+	border-bottom: 10px solid orange;
+
+}
+
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	max-width: none;
+}
+
+.content {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.content h1 {
+	font-size: 800%;
+}
+
+.content #slogan {
+	color: white;
+	text-shadow: 10px 10px 10px black;
+	font-size: 2em;
+	margin-top: -1em;
+	margin-bottom: 1.5em;
+}
+
+.clickme {
+	border-radius: 10px;
+	background-color: transparent;
+	font-size: 135%;
+	padding: 10px 20px;
+	color: white;
+	text-decoration: none;
+	box-shadow: 5px 5px 5px 5px black;
+	border: 1px solid white;
+}
+
+.clickme:hover {
+	color: orange;
+	border: 3px solid orange;
+	text-decoration: none;
+}
+
+p {
+	font-size: 160%;
+}
+
+
+#navbar1 {
+	top: -100px;
+	transition: top 0.3s;
+	background: rgba(0,0,0,0.5);
+	border: none;
+}
+
+#navbar1 ul li a {
+	font-size: 1.5em;
+	color: orange;
+}
+
+#navbar1 ul li a:hover {
+	color: white;
+}
+
+.navbar-header button {
+	border: none;
+
+}
+
+.navbar-header button:hover {
+	background-color: orange !important;
+}
+
+.navbar-brand {
+	color: orange !important;
+}
+/* HOME PAGE END */
+
+
+#about h1, #menu h1, #specials h1, #contact h1 {
+	margin-top: 100px;
+}
+
+/* ABOUT PAGE START */
+#about {
+	background: url('../images 3/background.jpg') no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: 10px solid orange;
+	position: relative;
+}
+
+#about h1 {
+	color: black;
+	font-weight: bolder;
+	text-shadow: 5px 5px 5px white;
+}
+
+.piece {
+	color: white;
+	text-align: justify;
+}
+
+#about-sect {
+	background-color: rgba(0,0,0,0.5); 
+	border-radius: 20px;
+	margin: 10% 0;
+	box-shadow: 10px 10px 10px 10px #000;
+}
+/* ABOUT PAGE END */
+
+
+/* MENU PAGE START */
+#menu {
+	background: url('../images 3/Food.jpg') no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: 10px solid orange;
+	position: relative;
+
+}
+
+#menu h1 {
+	color: black;
+	font-weight: bolder;
+	text-shadow: 5px 5px 5px white;
+}
+
+#menu-sect {
+	background-color: rgba(0,0,0,0.5); 
+	border-radius: 20px;
+	margin: 10% 0;
+	box-shadow: 10px 10px 10px 10px #000;
+	color: white;
+	padding: 50px;
+}
+
+#caption {
+	width: 110%;
+	margin: -40px 0 0 95px;
+	height: 40px;	
+ 	overflow: hidden;
+ 	position: relative;
+ 	background: transparent;
+ 	color: orange;
+}
+
+#caption p {
+	position: absolute;
+	font-size: 1em;
+	-moz-animation: scroll-left 20s linear infinite;
+ 	-webkit-animation: scroll-left 20s linear infinite;
+ 	animation: scroll-left 20s linear infinite;
+ 	white-space: nowrap;
+}
+
+
+/* Marquee */
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
+/* Marquee */
+
+table {
+	font-size: 2em; 
+	margin: 50px auto; 
+	width: 100%;
+	border-bottom: 1px solid white;
+	color: white;
+}
+
+table td {
+	padding: 10px;
+}
+
+table th {
+	padding: 10px;
+}
+
+.price {
+	text-align: right;
+	color: orange;
+}
+
+
+
+/* MENU PAGE END */
+
+
+/* SPECIALS */
+
+#specials {
+	background: url('../images/bak2.jpg') no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: 10px solid orange;
+	padding-bottom: 100px;
+	position: relative;
+}
+
+#specials h1 {
+	color: black;
+	font-weight: bolder;
+	text-shadow: 5px 5px 5px white;
+}
+
+.card-img-top{
+  	width: 100%;
+  	height: 250px;
+  	border-top-right-radius: 15px;
+  	border-top-left-radius: 15px;
+  	
+}
+
+.row {
+	margin-top: 70px;
+}
+
+
+.card {
+	border: 2px solid white;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px 10px black;
+	margin-bottom: 50px;
+}
+
+.card-block {
+	padding: 10px;
+}
+
+.card button {
+	margin: 20px 0 10px 0;
+}
+
+#myModal, #myModal1, #myModal2, #myModal3, #myModal4, #myModal5, #myModal6, #myModal7, #myModal8 {
+	color: white;
+	font-size: 1em;
+	text-shadow: 5px 5px 5px black;
+}
+
+.modal-title {
+	font-size: 2.5em;
+}
+
+.modal-header, .modal-body, .modal-footer {
+	background-color: darkslategrey;
+	border-radius: 5px;
+}
+
+
+
+/* SPECIALS */
+
+
+
+
+/* CONTACT US */
+#contact {
+	background: url('../images 3/food3.jpg') no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: 10px solid orange;
+	position: relative;
+}
+
+#contact h1 {
+	color: black;
+	font-weight: bolder;
+	text-shadow: 5px 5px 5px white;
+}
+
+.col-md-4 {
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	padding: 20px;
+	margin-right: 40px;
+	box-shadow: 10px 10px 10px 10px black;
+	border-radius: 10px;
+}
+
+.col-md-7 {
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	height: 100%;
+	box-shadow: 10px 10px 10px 10px black;
+	border-radius: 10px;
+}
+
+.favicon {
+	text-align: center;
+	display: block;
+}
+
+iframe {
+	padding-bottom: 50px;
+	margin: auto 5%;
+	width: 90%;
+	height: 600px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], input[type=tel], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+/* CONTACT US */
+
+
+/* MEDIA QUIRIES (SCREEN SIZEZ) */
+@media only screen and (max-width: 575px) {
+	.col-lg-6 img {
+		width: 100%;
+		height: 350px;
+		margin-top: 5%;
+		box-shadow: 5px 5px 5px 5px black;
+		border-radius: 10px;
+	}
+
+	.clickme {
+		margin: 50px;
+	}
+	
+	.col-md-7 {
+		margin-right: 40px;
+	}
+
+	input[type=submit] {
+	    width: 100%;
+	}
+
+	#footer p {
+		font-size: 1.3em;
+	}
+	
+}
+
+@media only screen and (min-width: 575px) and (max-width: 766px) {
+	.col-lg-6 img {
+		width: 100%;
+		height: 350px;
+		margin-top: 5%;
+		box-shadow: 5px 5px 5px 5px black;
+		border-radius: 10px;
+	}
+	
+	#caption { width: 105%;}
+
+	.col-md-7 {
+		margin-right: 40px;
+	}
+
+	input[type=submit] {
+	    width: 100%;
+	}
+
+}
+
+
+@media only screen and (min-width: 766px) and (max-width: 991px) {
+	.content h1 {
+		font-size: 500%;
+	}
+
+	.column {
+		width: 100%;
+	}
+
+	.col-lg-6 img {
+		width: 100%;
+		height: 350px;
+		margin-top: 5%;
+		box-shadow: 5px 5px 5px 5px black;
+		border-radius: 10px;
+	}
+
+	#caption {width: 105%;}
+
+	.col-md-7 {
+		margin-right: 40px;
+	}
+
+	input[type=submit] {
+	    width: 100%;
+	}
+
+}
+
+
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+	.col-lg-6 img {
+		width: 100%;
+		height: 350px;
+		margin-top: 5%;
+		box-shadow: 5px 5px 5px 5px black;
+		border-radius: 10px;
+	}
+
+	#caption { width: 107%;}
+
+}
+
+@media only screen and (min-width: 1199px) {
+	.col-lg-6 img {
+		width: 100%;
+		height: 350px;
+		margin-top: 20%;
+		box-shadow: 5px 5px 5px 5px black;
+		border-radius: 10px;
+	}
+
+}
+
+/* SCROLL TO TOP BUTTON */
+.scrollToTop{
+	border: 2px solid black;
+	padding:10px; 
+	text-align: center; 
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	position:fixed;
+	top: 93%;
+	right: 10px;
+	display:none;
+	box-shadow: 2px 2px 2px 2px orange;
+	background-color: rgba(0,0,0,0.5);
+}
+.scrollToTop:hover{
+	text-decoration:none;
+	color: orange;
+}
+
+.navbar .nav > li.active > a {
+  color: white !important;
+  text-decoration: none;
+  background-color: transparent !important;
+}
+
+
+/* ************* FOOTER **************** */
+
+#footer {
+	height: 20%;
+	background: url('../images 3/wood_1.png') repeat fixed;
+	
+	position: relative;
+}
+
+#footer p {
+	text-align: center;
+	margin: 0;
+	color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    text-shadow: 5px 5px 5px black;
+    transform: translate(-50%, -50%)
+}
+
+#footer p span {
+	color: orange;
+}
+
+/* ************* FOOTER **************** */
+
+
+
+
+
+
+
+/* SNOWING EFFECT */
+
+/*
+.snow1 {
+	background: url(../images/snow.png) repeat;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	animation: animateOne 10s infinite linear;
+}
+
+.snow2 {
+	background: url(../images/snow2.png) repeat;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	animation: animateTwo 10s infinite linear;
+	background-size: 300px;
+}
+
+.snow3 {
+	background: url(../images/snow3.png) repeat;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	animation: animateThree 10s infinite linear;
+	background-size: 800px;
+}
+
+@keyframes animateOne {
+	0% {
+		background-position: 0px 0px;
+	}
+
+	100% {
+		background-position: 100px 650px;
+	}
+}
+
+@keyframes animateTwo {
+	0% {
+		background-position: 0px -100px;
+	}
+
+	100% {
+		background-position: 0px 650px;
+	}
+}
+
+@keyframes animateThree {
+	0% {
+		background-position: 0px 100px;
+	}
+
+	100% {
+		background-position: 300px 650px;
+	}
+}
+*/
